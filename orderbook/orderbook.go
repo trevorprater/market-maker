@@ -48,7 +48,7 @@ func New(market *bittrex.Market) *OrderBook {
 	o.fillMutex = &sync.RWMutex{}
 	o.eventsMutex = &sync.RWMutex{}
 
-	//go o.ingestMarketData()
+	go o.ingestMarketData()
 
 	return &o
 }
