@@ -250,7 +250,7 @@ func (o *OrderBook) BidRate(priceDepth float64) (float64, error) {
 	}
 }
 
-// AskRate returns the bid rate at the specified depth in base currency.
+// AskRate returns the ask rate at the specified depth in base currency.
 func (o *OrderBook) AskRate(priceDepth float64) (float64, error) {
 	asks, _ := o.BestAsksDepth(priceDepth)
 	if len(asks) > 0 {
