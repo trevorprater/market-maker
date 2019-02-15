@@ -49,23 +49,6 @@ func main() {
 	}()
 
 	for {
-		print("\033[H\033[2J")
-		// for i := range orderBooks {
-		// 	orderbook := orderBooks[i]
-		// 	fmt.Println("\n----------------", orderbook.Market.MarketName, "-----------------")
-		// 	fmt.Println("\n-----------BIDS-----------")
-		// 	bids := orderbook.BestBidsN(10)
-
-		// 	for i := range bids {
-		// 		fmt.Println(bids[i][0], bids[i][1])
-		// 	}
-
-		// 	fmt.Println("\n----------ASKS------------")
-		// 	asks := orderbook.BestAsksN(10)
-		// 	for i := range asks {
-		// 		fmt.Println(asks[i][0], asks[i][1])
-		// 	}
-		// }
 		spreads := make(map[string]float64)
 		var ss []*util.KV
 
